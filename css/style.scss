@@ -52,7 +52,7 @@ $keycolor : #887f69;
             max-width: 100%;
         }
         @media (max-width: 550px) {
-            width: 50%;
+            width: 49%;
         }
     }
 }
@@ -140,13 +140,28 @@ header {
 #contents {
     #main {
         #cover_area {
+            margin-top: 10px;
             height: 170px;
-            width: 100%;
-            background-image: url(../images/list/cate_image.jpg);
-            background-size: cover;
-            @media (max-width: 550px) {
-                background-image: url(../images/list/cate_image_sp.jpg);
+            img {
+                max-width: 100%;
             }
+            @media (min-width: 550px) {
+                .sp_cover {
+                    display: none;
+                }
+            }
+            @media (max-width: 550px) {
+                height: 95px;
+                .pc_cover {
+                    display: none;
+                }
+            }
+            // background-image: url(../images/list/cate_image.jpg);
+            // background-size: cover;
+            // @media (max-width: 550px) {
+            //     background-image: url(../images/list/cate_image_sp.jpg);
+            //     height: 95px;
+            // }
         }
         .breadcramblist {
             color: $keycolor;
@@ -452,8 +467,8 @@ header {
         }
     }
     #side {
-        background-color: white;
         .itemsearch {
+            background-color: #fff;
             @media (max-width: 550px) {
                 .searchtitle {
                     display: none;
@@ -462,7 +477,7 @@ header {
             @extend .padding1;
             .searchbox {
                 background-color: #eeeeee;
-                margin: 10px 0 10px;
+                margin: 10px 0 5px;
                 background-image: url(../images/top/search_icon.png);
                 background-repeat: no-repeat;
                 background-position: 95% 50%;
@@ -472,6 +487,7 @@ header {
             }
         }
         .pagelink {
+            margin-top: 10px;
             @extend .padding1;
             background-color: $keycolor;
             background-image: url(../images/top/next_icon.png);
@@ -488,6 +504,7 @@ header {
                 background-position: 95% 50%;
             }
             .category_name {
+                background-color: #fff;
                 @extend .padding1;
                 border-bottom: 1px solid $basecolor;
                 background-image: url(../images/top/next_icon_gray.png);
@@ -501,7 +518,7 @@ header {
             }
         }
         .about {
-            margin-top: 5px;
+            margin-top: 10px;
             .about_title {
                 @extend .padding1;
                 background-color: $keycolor;
@@ -510,6 +527,7 @@ header {
                 background-position: 95% 50%;
             }
             .about_contents {
+                background-color: #fff;
                 padding: 10px;
                 p {
                     @include fontsize(12);
@@ -537,13 +555,14 @@ header {
             }
         }
         .shopinfo {
-            margin-top: 5px;
+            margin-top: 10px;
             width: 100%;
             .shopinfo_title {
                 @extend .padding1;
                 @extend .nexticon_bg;
             }
             .shopinfo_contents {
+                background-color: #fff;
                 padding: 10px;
                 p {
                     @include fontsize(12);

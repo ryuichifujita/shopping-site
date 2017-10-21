@@ -34,7 +34,7 @@ html {
       max-width: 100%; }
     @media (max-width: 550px) {
       .itemflex .itembox, #contents #main .new_items .item_images .itembox, #contents #main .popular_items .item_images .itembox, #contents #main .recent_items .item_images .itembox {
-        width: 50%; } }
+        width: 49%; } }
 
 .nexticon_bg, #contents #side .shopinfo .shopinfo_title {
   background-color: #887f69;
@@ -101,13 +101,18 @@ header {
         text-decoration: none; }
 
 #contents #main #cover_area {
-  height: 170px;
-  width: 100%;
-  background-image: url(../images/list/cate_image.jpg);
-  background-size: cover; }
+  margin-top: 10px;
+  height: 170px; }
+  #contents #main #cover_area img {
+    max-width: 100%; }
+  @media (min-width: 550px) {
+    #contents #main #cover_area .sp_cover {
+      display: none; } }
   @media (max-width: 550px) {
     #contents #main #cover_area {
-      background-image: url(../images/list/cate_image_sp.jpg); } }
+      height: 95px; }
+      #contents #main #cover_area .pc_cover {
+        display: none; } }
 #contents #main .breadcramblist {
   color: #887f69;
   background-color: #e8e4da;
@@ -334,88 +339,92 @@ header {
         #contents #main .shopping_guide .guidedetails .guidebox {
           width: 100%;
           margin-bottom: 5px; } }
-#contents #side {
-  background-color: white; }
+#contents #side .itemsearch {
+  background-color: #fff; }
   @media (max-width: 550px) {
     #contents #side .itemsearch .searchtitle {
       display: none; } }
   #contents #side .itemsearch .searchbox {
     background-color: #eeeeee;
-    margin: 10px 0 10px;
+    margin: 10px 0 5px;
     background-image: url(../images/top/search_icon.png);
     background-repeat: no-repeat;
     background-position: 95% 50%;
     font-style: italic;
     display: block;
     width: 100%; }
-  #contents #side .pagelink {
+#contents #side .pagelink {
+  margin-top: 10px;
+  background-color: #887f69;
+  background-image: url(../images/top/next_icon.png);
+  background-repeat: no-repeat;
+  background-position: 95% 50%; }
+#contents #side .categories {
+  margin-top: 10px; }
+  #contents #side .categories .categories_title {
+    background-color: #887f69;
+    background-image: url(../images/top/down_icon.png);
+    background-repeat: no-repeat;
+    background-position: 95% 50%; }
+  #contents #side .categories .category_name {
+    background-color: #fff;
+    border-bottom: 1px solid #f9f8f6;
+    background-image: url(../images/top/next_icon_gray.png);
+    background-repeat: no-repeat;
+    background-position: 95% 50%; }
+    #contents #side .categories .category_name a {
+      font-size: 12px;
+      font-size: 1.2rem;
+      text-decoration: none;
+      color: black; }
+#contents #side .about {
+  margin-top: 10px; }
+  #contents #side .about .about_title {
     background-color: #887f69;
     background-image: url(../images/top/next_icon.png);
     background-repeat: no-repeat;
     background-position: 95% 50%; }
-  #contents #side .categories {
-    margin-top: 10px; }
-    #contents #side .categories .categories_title {
-      background-color: #887f69;
-      background-image: url(../images/top/down_icon.png);
-      background-repeat: no-repeat;
-      background-position: 95% 50%; }
-    #contents #side .categories .category_name {
-      border-bottom: 1px solid #f9f8f6;
-      background-image: url(../images/top/next_icon_gray.png);
-      background-repeat: no-repeat;
-      background-position: 95% 50%; }
-      #contents #side .categories .category_name a {
-        font-size: 12px;
-        font-size: 1.2rem;
-        text-decoration: none;
-        color: black; }
-  #contents #side .about {
-    margin-top: 5px; }
-    #contents #side .about .about_title {
-      background-color: #887f69;
-      background-image: url(../images/top/next_icon.png);
-      background-repeat: no-repeat;
-      background-position: 95% 50%; }
-    #contents #side .about .about_contents {
-      padding: 10px; }
-      #contents #side .about .about_contents p {
-        font-size: 12px;
-        font-size: 1.2rem; }
-      #contents #side .about .about_contents .about_image {
-        max-width: 100%; }
-      @media (max-width: 550px) {
-        #contents #side .about .about_contents {
-          display: flex; }
-          #contents #side .about .about_contents .box_side {
-            box-sizing: border-box;
-            width: 50%;
-            margin-right: 10px; }
-            #contents #side .about .about_contents .box_side .more_button {
-              margin: 0; }
-            #contents #side .about .about_contents .box_side:last-child {
-              margin-right: 0; } }
-  #contents #side .shopinfo {
-    margin-top: 5px;
-    width: 100%; }
-    #contents #side .shopinfo .shopinfo_contents {
-      padding: 10px; }
-      #contents #side .shopinfo .shopinfo_contents p {
-        font-size: 12px;
-        font-size: 1.2rem; }
-      #contents #side .shopinfo .shopinfo_contents .shopinfo_image {
-        max-width: 100%; }
-      @media (max-width: 550px) {
-        #contents #side .shopinfo .shopinfo_contents {
-          display: flex; }
-          #contents #side .shopinfo .shopinfo_contents .box_side {
-            box-sizing: border-box;
-            width: 50%;
-            margin-right: 10px; }
-            #contents #side .shopinfo .shopinfo_contents .box_side .more_button {
-              margin: 0; }
-            #contents #side .shopinfo .shopinfo_contents .box_side:last-child {
-              margin-right: 0; } }
+  #contents #side .about .about_contents {
+    background-color: #fff;
+    padding: 10px; }
+    #contents #side .about .about_contents p {
+      font-size: 12px;
+      font-size: 1.2rem; }
+    #contents #side .about .about_contents .about_image {
+      max-width: 100%; }
+    @media (max-width: 550px) {
+      #contents #side .about .about_contents {
+        display: flex; }
+        #contents #side .about .about_contents .box_side {
+          box-sizing: border-box;
+          width: 50%;
+          margin-right: 10px; }
+          #contents #side .about .about_contents .box_side .more_button {
+            margin: 0; }
+          #contents #side .about .about_contents .box_side:last-child {
+            margin-right: 0; } }
+#contents #side .shopinfo {
+  margin-top: 10px;
+  width: 100%; }
+  #contents #side .shopinfo .shopinfo_contents {
+    background-color: #fff;
+    padding: 10px; }
+    #contents #side .shopinfo .shopinfo_contents p {
+      font-size: 12px;
+      font-size: 1.2rem; }
+    #contents #side .shopinfo .shopinfo_contents .shopinfo_image {
+      max-width: 100%; }
+    @media (max-width: 550px) {
+      #contents #side .shopinfo .shopinfo_contents {
+        display: flex; }
+        #contents #side .shopinfo .shopinfo_contents .box_side {
+          box-sizing: border-box;
+          width: 50%;
+          margin-right: 10px; }
+          #contents #side .shopinfo .shopinfo_contents .box_side .more_button {
+            margin: 0; }
+          #contents #side .shopinfo .shopinfo_contents .box_side:last-child {
+            margin-right: 0; } }
 
 .pagefooter {
   margin-top: 40px; }
