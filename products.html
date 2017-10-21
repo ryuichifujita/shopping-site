@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>APPLE BERRY | PRODUCTS</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/skeleton.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="owlcarousel/assets/owl.carousel.min.css">
+  <link rel="stylesheet" href="owlcarousel/assets/owl.theme.default.min.css">
+
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="icon" type="image/png" href="images/favicon.png">
+  
+  <!-- jQuery -->
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  <!-- Owl Carousel JS -->
+  <script src="owlcarousel/owl.carousel.min.js"></script>
+  <!-- Owl Carouselを動作させるために追加 -->
+  <script src="carousel-image.js"></script>
+  <script>
+    $(function(){
+      $(document).ready(function(){
+        $("#sp_menu_btn").click(function() {
+          $('.sp_navi_hamburger').slideToggle();
+        });
+      });
+    });
+  </script>
+  <script>
+    $(window).load(function(){
+      $("#list_img img").click(function(){
+        var img_src = $(this).attr("src");
+        $("#display_img img").attr("src",img_src);
+      });
+    });
+  </script>
+
+</head>
+<body>
+  <header>
+    <div id="header_in" class="container">
+      <div class="row">
+        <div class="six columns logo">
+          <img class="u-max-full-width" src="images/top/logo.png" alt="APPLE BERRY" />
+        </div>
+        <div class="six columns navi">
+          <ul class="pc_navi_li">
+            <li><a href="#"><img src="./images/top/menu_login.png"></a></li>
+            <li><a href="#"><img src="./images/top/menu_cart.png"></a></li>
+            <li><a href="#"><img src="./images/top/menu_mypage.png"></a></li>
+            <li><a href="#"><img src="./images/top/menu_guide.png"></a></li>
+            <li><a href="#"><img src="./images/top/facebook.png"></a></li>
+            <li><a href="#"><img src="./images/top/insta.png"></a></li>
+          </ul>
+          <ul class="sp_navi_li">
+            <li><a href="#"><img src="./images/top_sp/fb.png"></a></li>
+            <li><a href="#"><img src="./images/top_sp/insta.png"></a></li>
+            <li><a href="#"><img id="sp_menu_btn" src="./images/top_sp/menu_icon.png"></a></li>
+          </ul>
+          <ul class="sp_navi_hamburger">
+            <li><a href="#"><img src="./images/top/menu_login.png"></a></li>
+            <li><a href="#"><img src="./images/top/menu_cart.png"></a></li>
+            <li><a href="#"><img src="./images/top/menu_mypage.png"></a></li>
+            <li><a href="#"><img src="./images/top/menu_guide.png"></a></li>
+          </ul>
+        </div>
+        </div>
+      </div>
+  </header>
+  <div id="contents">
+    <div class="container">
+      <div class="row">
+        <div id="main" class="nine columns">
+          <div class="breadcramblist">
+            <img src="./images/list/home_icon.png" alt="">HOME / カテゴリー名 / 商品名
+          </div>
+          <div class="product_detail">
+            <div class="product_namecode">
+              <div class="product_name">商品名が入ります</div>
+              <div class="product_code">fa0001-91</div>
+            </div>
+            <div class="product_image">
+              <div id="display_img">
+                <img src="./images/products/pro_img_01.jpg" alt="">
+              </div>
+              <ul id="list_img">
+                <div class="smallimages"><img src="./images/products/pro_img_01.jpg" alt=""></div>
+                <div class="smallimages"><img src="./images/products/pro_img_02.jpg" alt=""></div>
+                <div class="smallimages"><img src="./images/products/pro_img_03.jpg" alt=""></div>
+                <div class="smallimages"><img src="./images/products/pro_img_04.jpg" alt=""></div>
+                <div class="smallimages"><img src="./images/products/pro_img_05.jpg" alt=""></div>
+                <div class="smallimages"><img src="./images/products/gray_pro_img.jpg" alt=""></div>
+                <div class="smallimages"><img src="./images/products/gray_pro_img.jpg" alt=""></div>
+                <div class="smallimages"><img src="./images/products/gray_pro_img.jpg" alt=""></div>
+                <div class="smallimages"><img src="./images/products/gray_pro_img.jpg" alt=""></div>
+                <div class="smallimages"><img src="./images/products/gray_pro_img.jpg" alt=""></div>
+              </ul>
+            </div>
+            <div class="order">
+              <h6>COLOR/SIZE</h6>
+              <table>
+                <tr>
+                  <th></th>
+                  <th>カラー1</th>
+                  <th>カラー2</th>
+                </tr>
+                <tr>
+                  <th>
+                    サイズ
+                  </th>
+                  <td><input type="checkbox"></td>
+                  <td><input type="checkbox"></td>
+                </tr>
+              </table>
+              <div class="order_flexbox">
+                <table class="price_quantity">
+                  <tr>
+                    <th>PRICE</th>
+                    <td class="price"><span>&yen;<span class="price_number">1,000</span></span>(tax in)</td>
+                  </tr>
+                  <tr>
+                    <th>Quantity</th>
+                    <td><input type="text"></td>
+                  </tr>
+                </table>
+                <div class="addtocart">
+                  <img src="./images/products/add_to_cart.png">
+                </div>
+              </div>
+              <div class="product_descripton">
+                <div class="description_title"><h6>商品説明</h6></div>
+                <div class="description_detail">
+                  <h6>■説明タイトル説明タイトル説明タイトル説明タイトル</h6>
+                  <p>説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト<br>
+                  説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト説明テキ<br>
+                  スト説明テキスト説明テキスト説明テキスト説明テキスト説明テキスト</p>
+                </div>
+                <table class="colorsize">
+                  <tr>
+                    <th>カラー</th>
+                    <td>説明文が入ります説明文が入ります説明文が入ります</td>
+                  </tr>
+                  <tr>
+                    <th>サイズ</th>
+                    <td>説明文が入ります説明文が入ります説明文が入ります</td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+          </div>
+          <div class="recent_items">
+            <img class="pc_recentitems" src="./images/list/recent_pro_pc.png" alt="">
+            <img class="sp_recentitems" src="./images/list/title_recent_pro.png" alt="">
+            <div class="item_images">
+                <div class="itembox">
+                  <img src="./images/top/item_07.jpg" alt="">
+                  <p>商品名が入ります商品名が入ります商品名が入ります</p>
+                  <p>&yen;10,000(tax in)</p>
+                </div>
+                <div class="itembox">
+                  <img src="./images/top/item_08.jpg" alt="">
+                  <p>商品名が入ります商品名が入ります商品名が入ります</p>
+                  <p>&yen;10,000(tax in)</p>
+                </div>
+                <div class="itembox">
+                  <img src="./images/top/item_09.jpg" alt="">
+                  <p>商品名が入ります商品名が入ります商品名が入ります</p>
+                  <p>&yen;10,000(tax in)</p>
+                </div>
+            </div>
+          </div>
+          <div class="shopping_guide">
+            <img class="pc_guide" src="./images/top/title_guide.png" alt="">
+            <img class="sp_guide" src="./images/top_sp/title_guide.png" alt="">
+             <div class="guidedetails">
+              <div class="guidebox">
+                <h5>お届けについて</h5>
+                <img src="./images/top/otodoke_banner.png" alt="">
+                <h6>■〇〇運輸</h6>
+                <p>送料 &yen;000円</p>
+                <h6>■ゆうパケット</h6>
+                <p>ポストに投函となります。日時指定不可</p>
+              </div>
+              <div class="guidebox">
+                <h5>決済について</h5>
+                <h6>■カード決済</h6>
+                <img src="./images/top/cards.png" alt="">
+                <h6>■代金引換</h6>
+                <p>代引き手数料が別途かかります</p>
+                <h6>■銀行振込</h6>
+                <p>お振込手数料お客様負担。<br>ご入金ごの発送となります。</p>
+              </div>
+            </div><!--guidedetails-->
+          </div><!--shopping_guide-->
+        </div>
+        <div id="side" class="three columns">
+          <div class="itemsearch">
+            <img class="searchtitle" src="./images/top/itemserch.png" alt="">
+            <input class="searchbox" type="text" placeholder="Search...">
+          </div>
+          <div class="pagelink">
+            <img src="./images/top/pagelink.png" alt="">
+          </div>
+          <div class="categories">
+            <div class="categories_title">
+              <img src="./images/top/categories.png" alt="">
+            </div>
+            <div class="category_name"><a href="#">カテゴリー名</a></div>
+            <div class="category_name"><a href="#">カテゴリー名</a></div>
+            <div class="category_name"><a href="#">カテゴリー名</a></div>
+            <div class="category_name"><a href="#">カテゴリー名</a></div>
+            <div class="category_name"><a href="#">カテゴリー名</a></div>
+            <div class="category_name"><a href="#">カテゴリー名</a></div>
+          </div>
+          <div class="about">
+            <div class="about_title">
+              <img src="./images/top/about.png" alt="">
+            </div>
+            <div class="about_contents">
+              <div class="box_side">
+                <img class="about_image" src="./images/top/about_img.jpg" alt="">
+              </div>
+              <div class="box_side">
+                <p>お店の説明お店の説明お店の説明がはいりますお店の説明お店の説明お店の説明</p>
+                <img class="more_button" src="./images/top/more_btn.png" alt="">
+              </div>
+            </div>
+          </div>
+          <div class="shopinfo">
+            <div class="shopinfo_title">
+              <img src="./images/top/shop_info.png" alt="">
+            </div>
+            <div class="shopinfo_contents">
+              <div class="box_side">
+                <img class="shopinfo_image" src="./images/top/shopinfo_img.jpg" alt="">
+              </div>
+              <div class="box_side">
+                <p>お店の説明お店の説明お店の説明がはいりますお店の説明お店の説明お店の説明</p>
+                <img class="more_button" src="./images/top/more_btn.png" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="twelve columns pagefooter">
+          <div class="pagetop">
+            <a href="#"><img src="./images/top/pagetop.png" alt=""></a>
+          </div>
+          <div class="pc_footer_navi">
+            <a href="#">特定商取引に基づく表記</a>・
+            <a href="#">プライバシーポリシー</a>・
+            <a href="#">マイページ</a>
+          </div>
+          <div class="sp_footer_navi">
+            <a href="#">特定商取引に基づく表記</a>・
+            <a href="#">プライバシーポリシー</a><br>・
+            <a href="#">マイページ</a>
+          </div>
+          <div class="copyright">
+            copyright（C）APPLE BERRY all rights reserved.
+          </div>
+        </div>
+      </div>  
+    </div>
+  </footer>
+
+</body>
+</html>
